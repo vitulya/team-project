@@ -17,9 +17,18 @@
                 <label class=" sub__label visually-hidden" for="user_email"> Subscribe </label>
                 <div class="sub__wrapper">
                     <input type="email"  class="sub__mail" name="mail" id="user_email" placeholder="Enter your email">
+                    
+                    <div class="sub-error">
+                        <svg class="sub-error__svg" width="12px" height="12px">
+                            <use href="./images/sprite.svg#icon-warning"></use>
+                        </svg>
+                        <p class="sub-error__text">Not a valid email address (example@email.com)</p>
+                    </div>
+                    
                     <button type="submit" class="subscribe-btn button">
                         Subscribe
-                    </button>
+                        </button>
+                        
                 </div>
             </form>
         </div>

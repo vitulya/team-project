@@ -1,39 +1,42 @@
 <footer class="footer" id="contact">
     <div class="container">
-        <nav class="menu">
-            <a href="./index.html" class="logo">
-                <svg class="logo__svg" width="66" height="52">
-                    <use href="./images/sprite.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <ul class="site-nav list">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Home</a></li>
-                <li class="site-nav__item"><a href="#about" class="site-nav__link link">About</a></li>
-                <li class="site-nav__item"><a href="#service" class="site-nav__link link">Service</a></li>
-                <li class="site-nav__item"><a href="#menu" class="site-nav__link link">Menu</a></li>
-                <li class="site-nav__item"><a href="#contact" class="site-nav__link link">Contact</a></li>
-            </ul>
-        </nav>
-    
+        <div class="footer__navigation">
+            <nav class="menu">
+                <a href="./index.html" class="logo">
+                    <svg class="logo__svg" width="66" height="52">
+                        <use href="./images/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link  site-nav__link_current">Home</a></li>
+                    <li class="site-nav__item"><a href="#about" class="site-nav__link link">About</a></li>
+                    <li class="site-nav__item"><a href="#service" class="site-nav__link link">Service</a></li>
+                    <li class="site-nav__item"><a href="#menu" class="site-nav__link link">Menu</a></li>
+                    <li class="site-nav__item"><a href="#contact" class="site-nav__link link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sub">
+                <form class="sub__form">
+                    <label class="sub__label"> Subscribe </label>
+                      <div>
+                        <input type="email" class="sub__mail" name="mail" placeholder="Enter your email">
+                            <button type="submit" class="contact-form-btn button">
+                             Subscribe
+                            </button></div>
+                </form>
+                <p class="sub__policy">By subscribing you agree to with our <a href="" class="sub__policy-link">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+        
         <div class="footer-wrapper">
             <ul class="footer-wrapper__list list">
                 <li class="footer-wrapper__item">Privacy Policy</li>
                 <li class="footer-wrapper__item">Terms of Service</li>
                 <li class="footer-wrapper__item">Cookies Settings</li>
             </ul>
-    
-            <div class="sub">
-                <p class="sub-titele">Subscribe</p>
-                <form class="sub__form">
-                    <label class="sub__mail">
-                        <input type="mail" class="contact-form" name="mail">
-                    </label>
-                </form>
-                <button type="submit" class="contact-form-btn button">Subscribe</button>
-                <p class="sub__policy">By subscribing you agree to with our <a href="" class="sub__policy-link">Privacy
-                        Policy</a></p>
-            </div>
-    
-        <p class="footer__term-of-use">2022 FoodSta. All right reserved.</p>
-    </div>
+            <p class="footer-copyright">2022 FoodSta. All right reserved.</p>
+        </div>
+    </div>   
 </footer>

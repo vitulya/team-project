@@ -1,0 +1,35 @@
+.button{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 30px;
+    border: none;
+}
+
+.order-btn{
+    background-color: var(--primary-accent-color);
+
+    padding: 6px 18px;
+}
+
+.offerings-btn{
+    background: var(--secondary-white-color);
+    border: 2px solid #7EB101;
+
+    padding: 8px 20px;
+}
+
+.subscribe-btn {
+    background: var(--primary-accent-color);
+
+    padding: 11px 22px;
+}
+
+.subscribe-footer-btn{
+    background-color: var(--primery-white-color);
+    border: 0.854167px solid var(--secondary-accent-color);
+
+    padding: 10px 21px;
+}
+
+

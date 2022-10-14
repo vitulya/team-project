@@ -1,0 +1,58 @@
+
+
+
+
+@media screen and (min-width:480px) {
+    .container.container-footer{
+    position: relative;}
+
+    .bg-pictures__orange{
+       position: absolute;
+    }
+
+    .bg-pictures__apple {
+        position: absolute;
+    }
+
+    .bg-pictures__fruits {
+        position: absolute;
+    }}
+
+@media screen and (min-width:768px) {
+    .bg-pictures{
+    display: none;}
+    .footer {
+        background-image: url(../images/tablet-footer-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width:768px),
+(-webkit-min-device-pixel-ratio: 2) and (min-width:768px),
+(min-resolution: 192dpi)and  (min-width:768px),
+(min-resolution: 2dppx) and (min-width:768px){
+    .box {
+        background-image: url('../images/tablet-footer-bg@2x.png');
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .footer {
+        background-image: url(../images/desk-footer-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width:1280px),
+(-webkit-min-device-pixel-ratio: 2) and (min-width:1280px),
+(min-resolution: 192dpi) and (min-width:1280px),
+(min-resolution: 2dppx) and (min-width:1280px) {
+    .box {
+        background-image: url('../images/desk-footer-bg@2x.png');
+    }
+}

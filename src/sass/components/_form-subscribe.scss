@@ -9,12 +9,16 @@
     }
 
     &__mail {
-        padding: 12px;
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         border: 0.854167px solid var(--accent-color);
         border-radius: 30px;
         background: #FEFEFE;
         width: 279px;
         margin-right: 60px;
+        margin-bottom: 20px;
     
         &:focus {
             outline: none;
@@ -56,6 +60,10 @@
 }
 
 .subscribe-footer-btn{
+    background-color: var(--primery-white-color);
+    border: 0.854167px solid var(--secondary-accent-color);
+    padding: 10px 21px;
+
     &:hover{
     border: #597D00;
         } 
@@ -64,7 +72,11 @@
     }
  }
 
+
+
 .subscribe-btn{
+        background: var(--primary-accent-color);        
+        padding: 11px 22px;
     &:hover {
             background-color: #B5FF00;
         }
@@ -76,11 +88,8 @@
 @media screen and (min-width: 480px) {
     .sub__mail {
         width: 279px;
-    }
-     .sub__mail {
-         margin-right: 32px;
-     }
-}
+        margin-right: 32px;
+}}
 
 @media screen and (min-width: 768px) {
     .sub__mail {

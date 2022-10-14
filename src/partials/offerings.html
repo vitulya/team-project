@@ -1,0 +1,72 @@
+<section class="section" id="about">
+  <div class="section__cotainer container">
+    <picture>
+      <source
+        srcset="
+          ./images/offerings/desktop/apple.png    1x,
+          ./images/offerings/desktop/apple@2x.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/offerings/tablet/apple.png    1x,
+          ./images/offerings/tablet/apple@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/offerings/mobile/apple.png    1x,
+          ./images/offerings/mobile/apple@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        src="./images/offerings/mobile/apple.png"
+        alt="apple"
+        class="section__image"
+      />
+    </picture>
+    <h2 class="section__title">What’s Special About Our Offerings</h2>
+    <p class="section__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <ul class="offerings-list list" id="services">
+      <li class="offerings-list__item">
+        <span class="offerings-list__wrapper">
+          <svg class="offerings-list__icon" width="32px" height="32px">
+            <use href="./images/sprite.svg#icon-rocket"></use>
+          </svg>
+        </span>
+        <h3 class="offerings-list__title">Fasest Delivery</h3>
+        <p class="offerings-list__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros.
+        </p>
+      </li>
+      <li class="offerings-list__item">
+        <span class="offerings-list__wrapper">
+          <svg class="offerings-list__icon" width="32px" height="32px">
+            <use href="./images/sprite.svg#icon-touch"></use>
+          </svg>
+        </span>
+        <h3 class="offerings-list__title">Easy To Order</h3>
+        <p class="offerings-list__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros.
+        </p>
+      </li>
+    </ul>
+    <button type="button" class="button offerings-btn">Order Now</button>
+    <span class="offerings__link-wrapper">
+      <a href="" class="offerings__link link">Read More</a>
+      <svg class="offerings__link-arrow" width="14px" height="14px">
+        <use href="./images/sprite.svg#icon-arrow"></use>
+      </svg>
+    </span>
+  </div>
+</section>

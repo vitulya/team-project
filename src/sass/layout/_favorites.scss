@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     
+    
 }
 .favorites__title {
     font-size: 42px;
@@ -22,6 +23,7 @@
 .favorites-dish {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
     
@@ -31,8 +33,7 @@
     justify-content: center;
     align-items: center;
     border: 11px solid var(--accent-color);
-    width: 280px;
-    height: 280px;  
+    padding: 18px 17px;
 }
 
 .favorites-dish__img-pictur {
@@ -50,12 +51,12 @@
 .favorites__text {
     width: 656px;
     margin-bottom: 40px;
+    
 }
 
 .favorites-dish__img {
    border: 14px solid var(--accent-color);
-   width: 336px;
-   height: 336px;  
+   padding: 21px 20px; 
 }
 
 .favorites-dish__img-pictur {
@@ -74,8 +75,7 @@
     
     .favorites-dish__img {
        border: 16px solid var(--accent-color);
-       width: 395px;
-       height: 395px;  
+       padding: 25px 24px;  
     
     }
     

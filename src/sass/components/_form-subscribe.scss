@@ -55,8 +55,24 @@
     display: flex;
 }
 
+.subscribe-footer-btn{
+    &:hover{
+    border: #597D00;
+        } 
+    &:focus {
+    border:  #597D00;
+    }
+ }
 
-
+.subscribe-btn{
+    &:hover {
+            background-color: #B5FF00;
+        }
+    
+    &:focus {
+        background-color: #B5FF00;
+    }
+}
 @media screen and (min-width: 480px) {
     .sub__mail {
         width: 279px;

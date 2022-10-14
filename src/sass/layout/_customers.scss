@@ -1,10 +1,8 @@
 .customers{
     background-image: url(../images/customers/bg-320.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 
-    display: block;
-    margin: auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
@@ -79,7 +77,6 @@
 
 @media screen and (min-width:480px) {
     .customers {
-        max-width: 480px;
 
         background-image: url(../images/customers/bg-480.jpg);
     }
@@ -129,9 +126,7 @@
     }
 
     .customers {
-        max-width: 768px;
         padding-bottom: 120px;
-        background-size: 100% 544px;
 
         background-image: url(../images/customers/bg-768.jpg);
     }
@@ -162,8 +157,6 @@
     }
 
     .customers {
-        background-size: 100%;
-        max-width: 1280px;
         padding-bottom: 200px;
         background-image: url(../images/customers/bg-1280.jpg);
     }

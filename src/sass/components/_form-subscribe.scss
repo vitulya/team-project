@@ -1,66 +1,69 @@
-.sub__form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.sub{
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__label {
+        margin-bottom: 12px;
+    }
+
+    &__mail {
+        padding: 12px;
+        border: 0.854167px solid var(--accent-color);
+        border-radius: 30px;
+        background: #FEFEFE;
+        width: 279px;
+        margin-right: 60px;
+    
+        &:focus {
+            outline: none;
+            border-color: var(--secondary-accent-color);
+            cursor: auto;
+        }
+    
+        &:hover {
+            cursor: pointer;
+        }
+    
+        &:invalid {
+            border-color: #FF705D;
+        }
+    }
 }
 
-.sub__label {
-    margin-bottom: 12px;
-}
 
 .sub-error {
     display: none;
     margin-top: 4px;
     width: 240px;
     position: absolute;
-}
 
-.sub__mail {
-    padding: 12px;
-    border: 0.854167px solid var(--accent-color);
-    border-radius: 30px;
-    background: #FEFEFE;
-    margin-right: 32px;
-
-    &:focus {
-        outline: none;
-        border-color: var(--secondary-accent-color);
-        cursor: auto;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    &:invalid {
-        border-color: #FF705D;
+    &__text {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 150%;
+            color: #FF705D;
+        }
+    __svg {
+        margin-right: 4px;
     }
 }
 
 
-.sub__mail:invalid + .sub-error{
-  display:flex;
+.sub__mail:invalid+.sub-error {
+    display: flex;
 }
 
-.sub-error__text{
-font-weight: 400;
-font-size: 10px;
-line-height: 150%;
-color: #FF705D;}
 
 
-.sub-error__svg{
-margin-right: 4px;}
-
-
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 480px) {
     .sub__mail {
         width: 279px;
     }
-
-    .sub__form {
-        margin-bottom: 20px;
-    }
+     .sub__mail {
+         margin-right: 32px;
+     }
 }
 
 @media screen and (min-width: 768px) {
@@ -70,9 +73,5 @@ margin-right: 4px;}
 
     .sub__mail-footer {
         width: 279px;
-    }
-
-    .sub__form {
-        margin-bottom: 12px;
     }
 }

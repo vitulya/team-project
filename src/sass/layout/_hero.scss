@@ -35,9 +35,7 @@
     position: absolute;
     visibility: hidden;
 }
-.galery__photo.current{
-    visibility: visible;
-}
+
 .hero__left-btn{
     display: flex;
     align-items: center;
@@ -92,6 +90,7 @@
             max-width: 280px;
         }
     }
+    
 }
 @media screen and (min-width: 768px) {
     .hero{
@@ -106,6 +105,9 @@
         }
     }
      .galery {
+        visibility: visible;
+    }
+    .galery__photo.current{
         visibility: visible;
     }
 }

@@ -1,64 +1,79 @@
- .footer-container{
-    position: relative;}
+.footer {
+    background-image: url(../images/phone-footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 
-
-    .bg-pictures__orange{
-        position: absolute;
-        right: 0;
-        z-index: -1;
-    }
-
-    .bg-pictures__apple {
-        position: absolute;
-        left: 0;
-        z-index: -1;
-    }
-
-    .bg-pictures__fruits {
-        position: absolute;
-       bottom: 0;
-       z-index: -1;
-    }
 .sub__policy {
     margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--primary-text-color);
+}
+
+.footer-wrapper {
+    text-align: center;
 }
 
 .footer-wrapper__list{
-display: flexbox;
-column-gap: 32px;
-margin-bottom: 40px;
-
-font-weight: 400;
-font-size: 10px;
-line-height: 1;
-color: #7EB101;
+    display:flex;
+    column-gap: 32px;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
 
-.footer-wrapper{
-    text-align: center;
+.footer-wrapper__link,
+.sub__policy-link {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+    color: var(--secondary-accent-color);
 }
 
 .footer-copyright{
     font-weight: 400;
     font-size: 10px;
     line-height:1;
-    color: #2C2C2C;
+    color: var(--primary-text-color);
     padding-bottom: 60px;
-
 }
-@media screen and (min-width:480px) {
 
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .footer {
+        background-image: url('../images/phone-footer-bg@2x.png');
+    }
 }
+
    
 @media screen and (min-width:768px) {
-    .bg-pictures{
-    display: none;}
     .footer {
-        background-image: url(../images/tablet-footer-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+           background-image: url(../images/tablet-footer-bg.png);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+       }
+    
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-wrapper__list {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+    .footer-wrapper__item{
+    display: flex;
     }
 }
 
@@ -66,7 +81,7 @@ color: #7EB101;
 (-webkit-min-device-pixel-ratio: 2) and (min-width:768px),
 (min-resolution: 192dpi)and  (min-width:768px),
 (min-resolution: 2dppx) and (min-width:768px){
-    .box {
+    .footer {
         background-image: url('../images/tablet-footer-bg@2x.png');
     }
 }
@@ -85,7 +100,7 @@ color: #7EB101;
 (-webkit-min-device-pixel-ratio: 2) and (min-width:1280px),
 (min-resolution: 192dpi) and (min-width:1280px),
 (min-resolution: 2dppx) and (min-width:1280px) {
-    .box {
+    .footer {
         background-image: url('../images/desk-footer-bg@2x.png');
     }
 }

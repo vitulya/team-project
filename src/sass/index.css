@@ -7,20 +7,23 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 320px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
 .link {
   text-decoration: none;
 }
@@ -70,19 +73,18 @@ body {
     padding-bottom: 100px;
   }
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section {
     padding-top: 100px;
   }
 }
-
 :root {
   --primary-accent-color: #BBF330;
   --secondary-accent-color: #7EB101;
   --accent-color: #FFE550;
   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
   --primery-white-color: #FEFEFE;
+  --secondary-white-color: #FFFFFF;
   --primary-text-color: #2C2C2C;
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -100,4 +102,80 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*# sourceMappingURL=index.css.map */
+
+.button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 30px;
+  border: none;
+}
+
+.order-btn {
+  background-color: var(--primary-accent-color);
+  padding: 6px 18px;
+}
+
+.offerings-btn {
+  background: var(--secondary-white-color);
+  border: 2px solid #7EB101;
+  padding: 8px 20px;
+}
+
+.subscribe-btn {
+  background: var(--primary-accent-color);
+  padding: 11px 22px;
+}
+
+.subscribe-footer-btn {
+  background-color: var(--primery-white-color);
+  border: 0.854167px solid var(--secondary-accent-color);
+  padding: 10px 21px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+.section__description {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+@media screen and (min-width: 768px) {
+  .section__description {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+}
+.footer-container {
+  position: relative;
+}
+
+.bg-pictures__orange {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-pictures__apple {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-pictures__fruits {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}/*# sourceMappingURL=index.css.map */

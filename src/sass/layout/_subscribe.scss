@@ -47,8 +47,6 @@
 @media screen and (min-width: 768px) {
 
 
-    .subscribe__banana {
-            position: absolute;}
 
     .subscribe-btn {
         margin-top: 0px;
@@ -56,8 +54,7 @@
     }
 
     .subscribe__banana-img {
-        position:relative;
-        transform: translate(100%, -100%);
+        transform: translate(20%, -100%);
     }
 
     .subscribe__title{
@@ -81,7 +78,7 @@
     }
 
      .subscribe__banana-img {
-         transform: translate(0, -46px);
+         transform: translate(-100%, -20%);
          z-index: 0;
      }
 }

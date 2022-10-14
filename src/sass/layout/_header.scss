@@ -43,11 +43,16 @@
   line-height: 0;
   border: 0;
   padding: 0;
-  background-color: var(--primery-white-color);
+  background-color: var(--primary-white-color);
 }
 
 .mobile-menu-btn__icon {
   fill: var(--secondary-accent-color);
+}
+
+.mobile-menu-btn:hover .mobile-menu-btn__icon,
+.mobile-menu-btn:focus .mobile-menu-btn__icon {
+  fill: var(--accent-color);
 }
 
 .mobile-menu__close-btn {
@@ -70,7 +75,9 @@
   line-height: 1.1875;
   color: #000000;
 }
-.site-nav-mobile__link_current {
+
+.site-nav-mobile__link:hover,
+.site-nav-mobile__link:focus {
   background-color: var(--primary-accent-color);
 }
 
@@ -94,5 +101,9 @@
 
   .order-btn {
     margin-left: 30px;
+  }
+  .order-btn:hover,
+  .order-btn:focus {
+    background-color: #b5ff00;
   }
 }

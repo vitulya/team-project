@@ -1,5 +1,9 @@
 @media screen and (max-width: 479px) {
-  .section {
+  .offerings {
+    background-image: url(../images/offerings/mobile/bgi/offerings-bgi.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-top: 40px;
     &__container {
       max-width: 320px;
       margin: 0 auto;
@@ -7,17 +11,16 @@
     &__title {
       margin-top: 60px;
       margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.17;
     }
     &__description {
       margin-bottom: 28px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
     }
-  }
-
-  .offerings {
-    background-image: url(../images/offerings/mobile/bgi/offerings-bgi.jpeg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 40px;
     &-list {
       &__wrapper {
         display: block;
@@ -35,15 +38,24 @@
 
       &__title {
         margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16;
       }
 
       &__description {
         margin-bottom: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
       }
     }
 
     &__link {
       color: #000000;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
       &-wrapper {
         display: inline-flex;
         align-items: center;
@@ -73,21 +85,26 @@
 }
 
 @media screen and (min-width: 480px) {
-  .section {
-    &__title {
-      margin-top: 60px;
-      margin-bottom: 28px;
-    }
-    &__description {
-      margin-bottom: 28px;
-    }
-  }
-
   .offerings {
     background-image: url(../images/offerings/mobile/bgi/offerings-bgi.jpeg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding-top: 40px;
+    &__title {
+      margin-top: 60px;
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.17;
+    }
+
+    &__description {
+      margin-bottom: 28px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+
     &-list {
       &__wrapper {
         display: block;
@@ -105,15 +122,24 @@
 
       &__title {
         margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16;
       }
 
       &__description {
         margin-bottom: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
       }
     }
 
     &__link {
       color: #000000;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
       &-wrapper {
         display: inline-flex;
         align-items: center;
@@ -147,10 +173,20 @@
   .offerings {
     background-image: url(../images/offerings/tablet/bgi/offerings-bgi.jpeg);
   }
-  .section__image {
+  .offerings__image {
     margin-top: 90px;
   }
-  .section__wrapper {
+  .offerings__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+  }
+  .offerings__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  .offerings__wrapper {
     margin-right: 210px;
     margin-bottom: 40px;
   }
@@ -174,26 +210,9 @@
 
 @media screen and (min-width: 1280px) {
   .offerings {
+    padding-bottom: 43px;
     background-image: url(../images/offerings/desktop/bgi/offerings-bgi.jpeg);
 
-    &-list {
-      column-gap: 67px;
-      margin-bottom: 32px;
-
-      &__description {
-        margin-bottom: 0;
-      }
-    }
-
-    &__link {
-      &-wrapper {
-        display: none;
-      }
-    }
-  }
-
-  .section {
-    padding-bottom: 43px;
     &__container {
       display: flex;
     }
@@ -211,6 +230,29 @@
 
     &__image-wrapper {
       margin-top: 20px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    &-list {
+      column-gap: 67px;
+      margin-bottom: 32px;
+      &__title {
+        line-height: 1.4;
+      }
+      &__description {
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+
+    &__link {
+      &-wrapper {
+        display: none;
+      }
     }
   }
 }

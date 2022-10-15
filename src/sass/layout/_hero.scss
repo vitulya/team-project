@@ -22,9 +22,9 @@
 .galery {
     position: absolute;
     visibility: hidden;
-    right: 0;
+    right: 40px;
     top: 89px;
-    overflow: hidden;
+    
 
     &__slider {
         width: 320px;
@@ -35,6 +35,7 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        overflow: hidden;
 
     }
 
@@ -61,7 +62,7 @@
     position: absolute;
     top: 50%;
     border: none;
-    transform: translate(-24px, -50%);
+    transform: translate(-10px, -50%);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
@@ -83,7 +84,7 @@
     top: 50%;
     right: 0;
     border: none;
-    transform: translate(24px, -50%);
+    transform: translate(10px, -50%);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
@@ -158,13 +159,13 @@
         &__left-btn {
             height: 40px;
             width: 48px;
-            transform: translate(-37px, -50%);
+            transform: translate(-11px, -50%);
         }
 
         &__right-btn {
             height: 40px;
             width: 48px;
-            transform: translate(37px, -50%);
+            transform: translate(11px, -50%);
         }
 
         &__btn-icon {
@@ -175,6 +176,7 @@
 
     .galery {
         top: -145px;
+        right: 30px;
     }
 
     .galery__slider {

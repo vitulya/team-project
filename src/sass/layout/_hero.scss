@@ -91,14 +91,15 @@
 
     &:hover,
     &:focus {
-            .hero__btn-icon {
-                stroke: var(--secondary-accent-color);
-            }
+        .hero__btn-icon {
+            stroke: var(--secondary-accent-color);
         }
+    }
 }
 
 .order-btn {
     transition: background-color var(--transition-dur-and-func);
+    display: block;
 }
 
 .hero__left-side>.order-btn:hover,

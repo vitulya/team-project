@@ -9,15 +9,11 @@
     }
 
     &__mail {
-        padding-left: 11px;
-        padding-right: 11px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding:11px;
         border: 0.854167px solid var(--accent-color);
         border-radius: 30px;
         background: #FEFEFE;
         width: 279px;
-        margin-right: 60px;
         margin-bottom: 20px;
     
         &:focus {
@@ -36,7 +32,6 @@
     }
 }
 
-
 .sub-error {
     display: none;
     margin-top: 4px;
@@ -54,6 +49,13 @@
     }
 }
 
+
+.sub__mail::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+}
 
 .sub__mail:invalid+.sub-error {
     display: flex;
@@ -85,15 +87,12 @@
         background-color: #B5FF00;
     }
 }
-@media screen and (min-width: 480px) {
-    .sub__mail {
-        width: 279px;
-        margin-right: 32px;
-}}
+
 
 @media screen and (min-width: 768px) {
     .sub__mail {
         width: 394px;
+        margin-right: 32px;
     }
 
     .sub__mail-footer {

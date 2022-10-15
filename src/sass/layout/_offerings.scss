@@ -1,0 +1,215 @@
+.offerings {
+  background-image: url(../images/offerings/mobile/bgi/320/offerings-bgi.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+
+  &__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
+  &__image {
+    margin-bottom: 60px;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &-list {
+    &__wrapper {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+
+    &__icon {
+      fill: var(--secondary-accent-color);
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.16;
+    }
+
+    &__description {
+      margin-bottom: 28px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+
+    &-wrapper {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &-arrow {
+      padding-bottom: 0;
+    }
+  }
+
+  &-btn {
+    margin-right: 24px;
+    transition: border-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+      border-color: #597d00;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 479px),
+  (min-resolution: 192dpi) and (max-width: 479px),
+  (min-resolution: 2dppx) and (max-width: 479px) {
+  .offerings {
+    background-image: url(../images/offerings/mobile/bgi/320/offerings-bgi@2x.jpeg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .offerings {
+    background-image: url(../images/offerings/mobile/bgi/offerings-bgi.jpeg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px),
+  (min-resolution: 192dpi) and (min-width: 480px),
+  (min-resolution: 2dppx) and (min-width: 480px) {
+  .offerings {
+    background-image: url(../images/offerings/mobile/bgi/offerings-bgi@2x.jpeg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offerings {
+    background-image: url(../images/offerings/tablet/bgi/offerings-bgi.jpeg);
+    padding-top: 150px;
+  }
+
+  .offerings__container {
+    max-width: 100%;
+  }
+
+  .offerings__title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+
+  .offerings__description {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  .offerings__wrapper {
+    width: 526px;
+    margin-bottom: 40px;
+  }
+
+  .offerings-list {
+    display: flex;
+    column-gap: 116px;
+    margin-bottom: 40px;
+  }
+
+  .offerings__link {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .offerings {
+    background-image: url(../images/offerings/tablet/bgi/offerings-bgi@2x.jpeg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offerings {
+    padding-top: 177px;
+    background-image: url(../images/offerings/desktop/bgi/offerings-bgi.jpeg);
+
+    &-btn {
+      margin-right: 0;
+    }
+
+    &__container {
+      display: flex;
+    }
+
+    &__content {
+      padding-top: 83px;
+      display: block;
+    }
+
+    &__wrapper {
+      width: 526px;
+    }
+
+    &__image-wrapper {
+      margin-right: 90px;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    &-list {
+      column-gap: 67px;
+      margin-bottom: 32px;
+
+      &__title {
+        line-height: 1.4;
+      }
+
+      &__description {
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+
+    &__link {
+      &-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .offerings {
+    background-image: url(../images/offerings/desktop/bgi/offerings-bgi@2x.jpeg);
+  }
+}

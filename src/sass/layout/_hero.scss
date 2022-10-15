@@ -89,18 +89,20 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
-    &:hover {
-        .hero__btn-icon {
-            stroke: var(--secondary-accent-color);
+    &:hover,
+    &:focus {
+            .hero__btn-icon {
+                stroke: var(--secondary-accent-color);
+            }
         }
-    }
 }
 
 .order-btn {
     transition: background-color var(--transition-dur-and-func);
 }
 
-.hero__left-side>.order-btn:hover {
+.hero__left-side>.order-btn:hover,
+.hero__left-side>.order-btn:focus {
     background-color: #B5FF00;
 }
 

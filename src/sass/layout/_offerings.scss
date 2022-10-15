@@ -78,9 +78,6 @@
   (min-resolution: 2dppx) and (max-width: 479px) {
   .offerings {
     background-image: url(../images/offerings/mobile/bgi/offerings-bgi@2x.jpeg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 40px;
   }
 }
 
@@ -163,9 +160,6 @@
   (min-resolution: 2dppx) and (min-width: 480px) {
   .offerings {
     background-image: url(../images/offerings/mobile/bgi/offerings-bgi@2x.jpeg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 40px;
   }
 }
 
@@ -177,12 +171,10 @@
     margin-top: 90px;
   }
   .offerings__title {
-    font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
   }
   .offerings__description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
   }
@@ -203,8 +195,6 @@
   (min-resolution: 2dppx) and (min-width: 768px) {
   .offerings {
     background-image: url(../images/offerings/tablet/bgi/offerings-bgi@2x.jpeg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
 }
 
@@ -232,7 +222,6 @@
       margin-top: 20px;
     }
     &__title {
-      font-weight: 700;
       font-size: 42px;
       line-height: 1.2;
     }
@@ -263,7 +252,5 @@
   (min-resolution: 2dppx) and (min-width: 1280px) {
   .offerings {
     background-image: url(../images/offerings/desktop/bgi/offerings-bgi@2x.jpeg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
 }

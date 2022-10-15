@@ -1,0 +1,34 @@
+.site-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 191px;
+    column-gap: 28px;
+  }
+  .site-nav__link {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+  }
+
+  .site-nav__link:hover,
+  .site-nav__link:focus {
+    color: var(--primary-accent-color);
+  }
+  .site-nav__link_current {
+    font-weight: 500;
+    color: var(--primary-accent-color);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .site-nav {
+    margin-left: 735px;
+  }
+}

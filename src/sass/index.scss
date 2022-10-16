@@ -5,7 +5,6 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-
 @import './components/logo';
 @import './components/navigation';
 @import './components/buttons';
@@ -14,8 +13,7 @@
 @import './components/logo';
 @import './components/form-subscribe';
 @import './components/backdrop';
-@import './components/modal';
-
+@import './components/modal-form';
 
 @import './layout/header';
 @import './layout/hero';
@@ -24,5 +22,3 @@
 @import './layout/customers';
 @import './layout/subscribe';
 @import './layout/footer';
-
-

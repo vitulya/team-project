@@ -1,7 +1,7 @@
 <section class="customers section">
-  <div class="container">
-    <h2 class="section__title">What our Customers Say</h2>
-    <p class="section__description">
+  <div class="container customers__container">
+    <h2 class="section__title customers__title">What our Customers Say</h2>
+    <p class="section__description customers__description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
     <ul class="reviews-list list">
@@ -30,13 +30,18 @@
         <div class="user">
           <img
             class="user__photo"
-            srcset="./images/user-1.jpg 1x, ./images/user@2x-1.jpg 2x"
-            src="./images/user-1.jpg"
+            srcset="
+              ./images/customers/user-1.jpg    1x,
+              ./images/customers/user@2x-1.jpg 2x
+            "
+            src="./images/customers/user-1.jpg"
             alt="Відвідувач"
             width="48px"
           />
-          <h3 class="user__title">Sumith Shah</h3>
-          <p class="user__description">Some Dude</p>
+          <div class="user__wrapper">
+            <h3 class="user__title">Sumith Shah</h3>
+            <p class="user__description">Some Dude</p>
+          </div>
         </div>
       </li>
 
@@ -66,13 +71,18 @@
         <div class="user">
           <img
             class="user__photo"
-            srcset="./images/user-2.jpg 1x, ./images/user@2x-2.jpg 2x"
-            src="./images/user-2.jpg"
+            srcset="
+              ./images/customers/user-2.jpg    1x,
+              ./images/customers/user@2x-2.jpg 2x
+            "
+            src="./images/customers/user-2.jpg"
             alt="Відвідувач"
             width="48px"
           />
-          <h3 class="user__title">Sumith Shah</h3>
-          <p class="user__description">Some Dude</p>
+          <div class="user__wrapper">
+            <h3 class="user__title">Sumith Shah</h3>
+            <p class="user__description">Some Dude</p>
+          </div>
         </div>
       </li>
     </ul>

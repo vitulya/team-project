@@ -7,8 +7,9 @@
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
-
+console.log(document.querySelector("[data-modal-open]"))
   function toggleModal() {
+    
     refs.modal.classList.toggle("is-hidden");
   }
 })();

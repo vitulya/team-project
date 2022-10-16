@@ -1,15 +1,16 @@
 .footer {
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
     background-image: url(../images/phone-footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 60px;
+    padding-top: 60px;
     
 }
 
 
+
 .sub__policy {
-    margin-bottom: 60px;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
@@ -67,6 +68,11 @@ margin-right: 81px;}
 .sub__policy{
 margin-top: 20px;}
 
+.sub__wrapper-footer{
+display: flex;
+flex-direction: column;
+align-items: flex-end;}
+
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -83,7 +89,6 @@ margin-top: 20px;}
            background-position: center;
            background-repeat: no-repeat;
            background-size: 100% 100%;
-           margin-top: 100px;
        }
     
     .footer-wrapper{
@@ -113,6 +118,9 @@ margin-top: 20px;}
     .sub__policy {
         margin-top: 12px;
     }
+    .sub__wrapper-footer {
+        display: block;
+    }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width:768px),
@@ -131,7 +139,7 @@ margin-top: 20px;}
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: 118px;
+        padding-top: 118px;
     }
   
     .logo-footer {
@@ -141,7 +149,9 @@ margin-top: 20px;}
     .footer-coneiner-desktop{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
+
 
 }
 

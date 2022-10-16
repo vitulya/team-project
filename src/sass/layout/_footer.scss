@@ -8,15 +8,6 @@
     
 }
 
-
-
-.sub__policy {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: var(--primary-text-color);
-}
-
 .footer-wrapper {
     text-align: center;
 }
@@ -45,6 +36,10 @@
     padding-bottom: 60px;
 }
 
+
+.logo-footer {
+    margin-right: 81px;
+}
 .menu-footer{
 display: flex;
 margin-bottom: 40px;
@@ -56,22 +51,12 @@ margin-bottom: 40px;
     line-height: 1.1;
     color: #000000;}
 
-.logo-footer{
-margin-right: 81px;}
-
 .site-nav-footer{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.sub__policy{
-margin-top: 20px;}
-
-.sub__wrapper-footer{
-display: flex;
-flex-direction: column;
-align-items: flex-end;}
 
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
@@ -81,7 +66,6 @@ align-items: flex-end;}
         background-image: url('../images/phone-footer-bg@2x.png');
     }
 }
-
    
 @media screen and (min-width:768px) {
     .footer {
@@ -114,13 +98,6 @@ align-items: flex-end;}
     .logo-footer {
         margin-right: 104px;
     }
-
-    .sub__policy {
-        margin-top: 12px;
-    }
-    .sub__wrapper-footer {
-        display: block;
-    }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width:768px),
@@ -150,9 +127,7 @@ align-items: flex-end;}
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-
+    }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width:1280px),

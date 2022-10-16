@@ -158,6 +158,28 @@ body {
     line-height: 1.18;
   }
 }
+<<<<<<< HEAD
+.footer-container {
+  position: relative;
+}
+
+.bg-pictures__orange {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-pictures__apple {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-pictures__fruits {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+=======
 .favorites__text {
   width: 280px;
   margin-bottom: 60px;
@@ -232,4 +254,5 @@ body {
     width: 315px;
     height: 315px;
   }
+>>>>>>> 7ee9d006b7e2bb8597fa1ea204a84d6c1d809c83
 }/*# sourceMappingURL=index.css.map */

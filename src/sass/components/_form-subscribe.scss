@@ -15,6 +15,7 @@
         background: #FEFEFE;
         width: 279px;
         margin-bottom: 20px;
+        transition:border-color var(--transition-dur-and-func);
     
         &:focus {
             outline: none;
@@ -31,6 +32,8 @@
         }
     }
 }
+
+
 
 .sub-error {
     display: none;
@@ -61,33 +64,65 @@
     display: flex;
 }
 
-.subscribe-footer-btn{
-    background-color: var(--primery-white-color);
-    border: 0.854167px solid var(--secondary-accent-color);
-    padding: 10px 21px;
 
-    &:hover{
-    border: #597D00;
-        } 
-    &:focus {
-    border:  #597D00;
-    }
- }
+.subscribe-btn {
+    background: var(--primary-accent-color);
+    padding: 11px 22px;
 
-
-
-.subscribe-btn{
-        background: var(--primary-accent-color);        
-        padding: 11px 22px;
     &:hover {
-            background-color: #B5FF00;
-        }
-    
+        background-color: #B5FF00;
+    }
+
     &:focus {
         background-color: #B5FF00;
     }
 }
 
+.subscribe-footer-btn{
+    background-color: var(--primery-white-color);
+    border: 0.854167px solid var(--secondary-accent-color);
+    padding: 10px 21px;
+    transition: border var(--transition-dur-and-func);
+
+    &:hover{
+        background: #FFE550;
+        border: 0.854167px solid #7EB101;
+        } 
+    &:focus {
+        background: #FFE550;
+        border: 0.854167px solid #7EB101;
+    }
+ }
+
+
+.sub__label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--primary-text-color);
+}
+
+.sub-footer {
+        margin-bottom: 60px;}
+
+.sub__mail-footer{
+    width: 100%;
+}
+
+.sub__policy {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    color: var(--primary-text-color);
+}
+
+
+.sub__wrapper-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 @media screen and (min-width: 768px) {
     .sub__mail {
@@ -97,10 +132,34 @@
 
     .sub__mail-footer {
         width: 279px;
+        margin-right: 13px;
+        margin-bottom: 0px;
     }
+    .sub-footer{
+        margin-bottom: 100px;
+    }
+
+    .sub__policy {
+         margin-top: 12px;
+    }
+
+    .sub__wrapper-footer {
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 1280px) {
     .sub__mail {
         margin-right: 32px;
-    }}
+    }
+    .sub__mail-footer{
+       margin-right: 13px;}
+
+    .sub-footer {
+         margin-bottom: 80px;
+     }
+    .sub__policy {
+        margin-bottom: 0px;
+    }
+}

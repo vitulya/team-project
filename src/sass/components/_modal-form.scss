@@ -27,10 +27,11 @@
   line-height: 1.25;
   cursor: pointer;
   background-color: var(--secondary-white-color);
-  // border: 1px solid #7eb101;
+  border: 1px solid #7eb101;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   transition: border-color var(--transition-dur-and-func);
+
   &:focus {
     outline: none;
     border-color: var(--secondary-accent-color);
@@ -41,9 +42,34 @@
   line-height: 1.25;
   color: #c4c4c4;
 }
-// .modal-form__input::title {
-//   color: red;
-// }
+
+.modal-form__input:invalid + .modal-form__dangerous {
+  display: flex;
+  column-gap: 4.43px;
+  position: absolute;
+  padding-left: 12.43px;
+}
+
+.modal-form__input:invalid {
+  border: 1px solid #ff705d;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-form__dangerous {
+  display: none;
+}
+
+.modal-form__dangerous-icon {
+  display: block;
+}
+.modal-form__dangerous-description {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #ff705d;
+}
 .modal-form-btn {
   align-self: center;
   padding: 8px 36px;
@@ -58,4 +84,10 @@
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--primary-accent-color);
+}
+
+.modal-form__input:invalid ~ .modal-form-btn {
+  background: var(--secondary-white-color);
+  border: 2px solid #ff705d;
+  border-radius: 30px;
 }

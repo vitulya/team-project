@@ -4,13 +4,7 @@
 }
 
 .modal-form__field {
-  margin-bottom: 24px;
-}
-
-.modal-form__desk {
-  display: block;
   margin-bottom: 2px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
@@ -20,6 +14,7 @@
 .modal-form__input {
   width: 100%;
   height: 48px;
+  margin-bottom: 24px;
   padding-left: 12px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -37,16 +32,21 @@
     border-color: var(--secondary-accent-color);
   }
 }
+.modal-form__input_mail {
+  margin-bottom: 32px;
+}
 .modal-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: #c4c4c4;
 }
 
+.modal-form__input:invalid {
+  margin-bottom: unset;
+}
 .modal-form__input:invalid + .modal-form__dangerous {
   display: flex;
   column-gap: 4.43px;
-  position: absolute;
   padding-left: 12.43px;
 }
 

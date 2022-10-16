@@ -7,27 +7,33 @@
         </button>
         <p class="modal-caption">Order Form</p>
         <form class="modal-form">
-            <label class="modal-form__field">
-                <span class="modal-form__desk">Name</span>
-            </label>
-                <input type="text" name="user_name" placeholder="Your name" class="modal-form__input"
-                    pattern="[a-zA-Z]+" minlength="3" maxlength="25">
-                    <div class="modal-form__dangerous">
-                         <svg class="modal-form__dangerous-icon" width="11.14" height="11.14">
-                             <use href="./images/sprite.svg#icon-dangerous"></use>
-                         </svg>
-                         <p class="modal-form__dangerous-description">The name must be between 3 and 25 characters</p>
-                    </div>
+            <label for="name" class="modal-form__field">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Your name" class="modal-form__input" pattern="[a-zA-Z]+" minlength="3" maxlength="25">
+            <div class="modal-form__dangerous">
+                <svg class="modal-form__dangerous-icon" width="11.14" height="11.14">
+                    <use href="./images/sprite.svg#icon-dangerous"></use>
+                </svg>
+                <p class="modal-form__dangerous-description">The name must be between 3 and 25 characters</p>
+            </div>
             
-            <label class="modal-form__field">
-                <span class="modal-form__desk">Phone number</span>
-                <input type="tel" name="user_phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _" class="modal-form__input" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" >
-            </label>
-            <label class="modal-form__field">
-                <span class="modal-form__desk">E-mail</span>
-                <input type="email" name="user_email" placeholder="example@gmail.com" class="modal-form__input"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
-            </label>
+            <label for="phone-number" class="modal-form__field">Phone number</label>
+            <input type="tel" id="phone-number" name="user_phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _" class="modal-form__input" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+            <div class="modal-form__dangerous">
+                <svg class="modal-form__dangerous-icon" width="11.14" height="11.14">
+                    <use href="./images/sprite.svg#icon-dangerous"></use>
+                </svg>
+                <p class="modal-form__dangerous-description">This phone must be in the format 099 000 00 00</p>
+            </div>
+            
+            <label for="mail" class="modal-form__field">E-mail</label>
+            <input id="mail" type="email" name="user_email" placeholder="example@gmail.com" class="modal-form__input modal-form__input_mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+            <div class="modal-form__dangerous">
+                <svg class="modal-form__dangerous-icon" width="11.14" height="11.14">
+                    <use href="./images/sprite.svg#icon-dangerous"></use>
+                </svg>
+                <p class="modal-form__dangerous-description">Please enter a valid email address</p>
+            </div>
             <button type="submit" class="modal-form-btn">Send</button>
         </form>
     </div>

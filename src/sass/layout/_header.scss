@@ -22,8 +22,7 @@
   width: 130px;
   top: 50px;
   right: 20px;
-  background-color: tomato;
-  background: var(--primery-white-color);
+  background: var(--primary-white-color);
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   border-radius: 30px 0px 30px 30px;
   visibility: hidden;
@@ -48,6 +47,7 @@
 
 .mobile-menu-btn__icon {
   fill: var(--secondary-accent-color);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .mobile-menu-btn:hover .mobile-menu-btn__icon,
@@ -100,7 +100,8 @@
   }
 
   .order-btn {
-    margin-left: 30px;
+    margin-left: auto;
+    transition: background-color var(--transition-dur-and-func);
   }
   .order-btn:hover,
   .order-btn:focus {

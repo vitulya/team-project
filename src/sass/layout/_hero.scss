@@ -99,8 +99,7 @@
 
 .hero .order-btn {
     transition: background-color var(--transition-dur-and-func);
-    display: block;
-    margin: 0;
+    display: inline-block;
 }
 
 .hero__left-side>.order-btn:hover,

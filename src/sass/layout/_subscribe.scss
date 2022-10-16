@@ -23,7 +23,7 @@
     padding-top: 52px;
 
     &__description {
-        margin-bottom: 43px;
+        margin-bottom: 40px;
     }
 }
 
@@ -38,7 +38,8 @@
 
 @media screen and (min-width: 768px) {
 
-
+  .subscribe__description{
+      margin-bottom: 24px;}
 
     .subscribe-btn {
         margin-top: 0px;
@@ -59,7 +60,8 @@
 @media screen and (min-width: 1280px) {
     
     .subscribe__description{
-    width: 656px;}
+    width: 656px;
+}
 
         .subscribe__banana {
             width: 100%;

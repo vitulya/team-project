@@ -1,0 +1,2 @@
+var offset=0,sliderLine=document.querySelector("[slider-line]"),sliderWidth=document.querySelector(".galery__photo").offsetWidth;document.querySelector("[scroll-left]").addEventListener("click",(function(){(offset+=sliderWidth+20)>2*(sliderWidth+20)&&(offset=0),sliderLine.style.left=-offset+"px"})),document.querySelector("[scroll-right]").addEventListener("click",(function(){(offset-=sliderWidth+20)<0&&(offset=2*(sliderWidth+20)),sliderLine.style.left=-offset+"px"}));
+//# sourceMappingURL=index.1eaf9de2.js.map

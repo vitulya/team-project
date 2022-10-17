@@ -16,6 +16,7 @@
         width: 279px;
         margin-bottom: 20px;
         transition:border-color var(--transition-dur-and-func);
+
     
         &:focus {
             outline: none;
@@ -26,30 +27,15 @@
         &:hover {
             cursor: pointer;
         }
-    
-        &:invalid {
-            border-color: #FF705D;
-        }
     }
 }
-
 
 
 .sub-error {
     display: none;
     margin-top: -16px;
-    width: 240px;
     position: absolute;
 
-    &__text {
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 150%;
-            color: #FF705D;
-        }
-    &__svg {
-        margin-right: 4px;
-    }
 }
 
 
@@ -58,10 +44,6 @@
     font-size: 12px;
     line-height: 150%;
     color: #505050;
-}
-
-.sub__mail:invalid+.sub-error {
-    display: flex;
 }
 
 
@@ -106,7 +88,7 @@
         margin-bottom: 60px;}
 
 .sub__mail-footer{
-    width: 100%;
+    width: 279px;
 }
 
 .sub__policy {
@@ -118,11 +100,53 @@
 }
 
 
-.sub__wrapper-footer {
+.sub__mail:focus:invalid+.sub-error {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    margin-top: -16px;
+    width: auto;
+    position: absolute;
+
 }
+
+.sub__mail:focus:invalid {
+    border-color: #FF705D;
+
+}
+
+.sub__mail:focus {
+    border-color: var(--secondary-accent-color);
+}
+
+.sub-error__text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #FF705D;
+
+}
+
+.sub-error__svg {
+    margin-right: 4px;
+}
+
+.subscribe-footer-btn {
+    margin-left: 178px;}
+
+@media screen and (min-width: 480px) {
+
+    .sub__wrapper-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    .sub-error-footer {
+        padding-right: 47px;
+        padding-top: 61px;
+    }
+    .subscribe-footer-btn {
+        margin-left: 0px;
+       }
+ }
 
 @media screen and (min-width: 768px) {
     .sub__mail {
@@ -146,6 +170,11 @@
     .sub__wrapper-footer {
         display: block;
     }
+
+    .sub-error-footer{
+    position: absolute;
+    padding-top: 15px;
+    padding-right: 0px;}
     
 }
 

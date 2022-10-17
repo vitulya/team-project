@@ -26,10 +26,6 @@
         &:hover {
             cursor: pointer;
         }
-    
-        &:invalid {
-            border-color: #FF705D;
-        }
     }
 }
 
@@ -41,15 +37,6 @@
     width: 240px;
     position: absolute;
 
-    &__text {
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 150%;
-            color: #FF705D;
-        }
-    &__svg {
-        margin-right: 4px;
-    }
 }
 
 
@@ -58,10 +45,6 @@
     font-size: 12px;
     line-height: 150%;
     color: #505050;
-}
-
-.sub__mail:invalid+.sub-error {
-    display: flex;
 }
 
 
@@ -122,6 +105,35 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.sub__mail:focus:invalid+.sub-error {
+    display: flex;
+    margin-top: -16px;
+    width: auto;
+    position: absolute;
+
+}
+
+.sub__mail:focus:invalid {
+    border-color: #FF705D;
+
+}
+
+.sub__mail:focus {
+    border-color: var(--secondary-accent-color);
+}
+
+.sub-error__text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #FF705D;
+
+}
+
+.sub-error__svg {
+    margin-right: 4px;
 }
 
 @media screen and (min-width: 768px) {

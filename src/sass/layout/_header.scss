@@ -18,6 +18,7 @@
 
 .mobile-menu {
   position: absolute;
+  z-index: 1;
   overflow: hidden;
   width: 130px;
   top: 50px;
@@ -57,13 +58,14 @@
 
 .mobile-menu__close-btn {
   position: absolute;
+  z-index: 2;
   top: 4px;
   right: 4px;
   display: block;
   border: 0;
   padding: 0;
   line-height: 0;
-  background: var(--primary-accent-color);
+  background: transparent;
 }
 
 .site-nav-mobile__link {
@@ -74,6 +76,7 @@
   font-size: 16px;
   line-height: 1.1875;
   color: #000000;
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .site-nav-mobile__link:hover,
